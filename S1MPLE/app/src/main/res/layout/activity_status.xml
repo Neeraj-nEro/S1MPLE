@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nero_oren.s1mple.StatusActivity"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/status_app_bar"/>
+
+    <EditText
+        android:id="@+id/status_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="Change Status Here"
+        android:inputType="textMultiLine"
+        android:padding="30dp"
+        android:layout_marginRight="8dp"
+        android:textColorHint="@color/purple_900"
+        android:background="@drawable/round_rect_light_color"/>
+
+    <Button
+        android:id="@+id/status_change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/status_input"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/round_rect_color"
+        android:padding="4dp"
+        android:text="Save Changes" />
+
+
+</RelativeLayout>

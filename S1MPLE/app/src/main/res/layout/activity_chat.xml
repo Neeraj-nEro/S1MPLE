@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.nero_oren.s1mple.ChatActivity">
+
+    <include
+        android:id="@+id/chat_bar_layout"
+        layout="@layout/app_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_list_of_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chat_bar_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blue_A100"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/select_image"
+            android:background="@color/blue_A100"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_select_image_to_send" />
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Type a message . . ."
+            android:inputType="textMultiLine"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/send_message"
+            android:background="@color/blue_A100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/ic_msg_send" />
+
+    </LinearLayout>
+
+</RelativeLayout>

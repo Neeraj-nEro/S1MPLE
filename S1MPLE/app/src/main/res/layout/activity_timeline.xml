@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_900"
+    tools:context="com.nero_oren.s1mple.TimelineActivity">
+
+    <ImageView
+        android:id="@+id/profilr_visit_user_image"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/default_pic" />
+
+    <TextView
+        android:id="@+id/profile_visit_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilr_visit_user_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Display user name" />
+
+    <TextView
+        android:id="@+id/profile_visit_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_visit_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        tools:text="Display User Status" />
+
+    <Button
+        android:id="@+id/profile_visit_send_req"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_visit_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/round_rect_color"
+        android:text="Send Friend Request"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/profile_visit_decline_req"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/round_rect_color"
+        android:text="Decline Friend Request"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nero_oren.s1mple.AllUserActivity">
+
+    <include
+        android:id="@+id/all_users_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search_input_text"
+        android:layout_margin="10dp"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all_users_app_bar"
+        android:layout_centerHorizontal="true"
+        android:text="Search for People"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/search_input_text"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_text_background"
+        android:ems="10"
+        android:hint="Search ..."
+        android:inputType="textMultiLine"
+        android:padding="10dp" />
+
+    <ImageButton
+        android:id="@+id/search_people_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/all_user_list"
+        android:layout_alignTop="@+id/search_input_text"
+        android:background="@drawable/accept"
+        android:padding="7dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+</RelativeLayout>
